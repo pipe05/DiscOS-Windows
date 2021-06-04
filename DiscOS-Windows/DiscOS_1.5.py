@@ -1,0 +1,88 @@
+#created by  pipe05
+#FILE MAY NOT WORK IN TERMINAL
+import time
+from colorama import init, Fore
+from random import randint
+init(convert=True)
+print(f"{Fore.BLUE}                    ________________________________________________")
+print(f"{Fore.BLUE}                    |                                              |") 
+print(f"{Fore.BLUE}                    |{Fore.RED} Hello. Welcome to DiscOS 1.5 Beta testing!{Fore.BLUE}   |")
+print(f"{Fore.BLUE}                    |                                              |")
+print(f"{Fore.BLUE}                    ------------------------------------------------")
+time.sleep(0.5)
+print(f"{Fore.BLUE}                    ____________________________________________________________________________________________")
+print(f"{Fore.BLUE}                    |                                                                                          |") 
+print(f"{Fore.BLUE}                    |{Fore.RED} Only one program may be run (DiscOS will automatically exit when done with its process){Fore.BLUE}  |")
+print(f"{Fore.BLUE}                    |                                                                                          |")
+print(f"{Fore.BLUE}                    --------------------------------------------------------------------------------------------")
+time.sleep(0.5)
+print(f"{Fore.BLUE}                    ________________________________________________")
+print(f"{Fore.BLUE}                    |                                              |") 
+print(f"{Fore.BLUE}                    |{Fore.RED} This is a copyright free,open source software{Fore.BLUE}|")
+print(f"{Fore.BLUE}                    |                                              |")
+print(f"{Fore.BLUE}                    ------------------------------------------------")
+time.sleep(0.5)
+print(f"{Fore.BLUE}                    __________________________________________________________________________")
+print(f"{Fore.BLUE}                    |                                                                        |") 
+print(f"{Fore.BLUE}                    |{Fore.RED} Although this is more like just a program the name DiscOS sounds better{Fore.BLUE}|")
+print(f"{Fore.BLUE}                    |                                                                        |")
+print(f"{Fore.BLUE}                    --------------------------------------------------------------------------")
+time.sleep(0.5)
+print(f"{Fore.BLUE}                    ________________________________________________")
+print(f"{Fore.BLUE}                    |                                              |") 
+print(f"{Fore.BLUE}                    |{Fore.RED} Created by 'pipe05'. {Fore.BLUE}                        |")
+print(f"{Fore.BLUE}                    |                                              |")
+print(f"{Fore.BLUE}                    ------------------------------------------------")
+time.sleep(0.5)
+print(f"{Fore.BLUE}                    ________________________________________________")
+print(f"{Fore.BLUE}                    |                                              |") 
+print(f"{Fore.BLUE}                    |{Fore.RED} What would you like to do?{Fore.BLUE}                   |")
+print(f"{Fore.BLUE}                    |                                              |")
+print(f"{Fore.BLUE}                    ------------------------------------------------")
+time.sleep(0.5)
+print(f"{Fore.BLUE}                    __________________________________________________________________")
+print(f"{Fore.BLUE}                    |                                                                |") 
+print(f"{Fore.BLUE}                    |{Fore.RED} Say some words with color?{Fore.GREEN}(Type 'color' without the quotes){Fore.BLUE}    |")
+print(f"{Fore.BLUE}                    |{Fore.RED} Want to know more about me?{Fore.GREEN}(Type 'about' without the quotes){Fore.BLUE}   |")
+print(f"{Fore.BLUE}                    |{Fore.RED} Check out my youtube channel{Fore.GREEN}(Type 'youtube' without the quotes){Fore.BLUE}|")
+print(f"{Fore.BLUE}                    |{Fore.RED} Want a random number between 0 and 100?{Fore.GREEN}(Type random){Fore.BLUE}           |")
+print(f"{Fore.BLUE}                    |                                                                |")
+print(f"{Fore.BLUE}                    ------------------------------------------------------------------")
+screen_1 = input(">>>")
+if screen_1 == "about":
+    print(f"{Fore.RED} Hello.")
+    time.sleep(1)
+    print(f"{Fore.RED} You may be wondering who I am.")
+    time.sleep(0.5)
+    print(f"{Fore.RED} My name is pipe05, or so to say.")
+    time.sleep(0.5)
+    print(f"{Fore.RED} I have always wanted to code, and now here I am, coding my own 'OS'")
+    time.sleep(2)
+    print(f"{Fore.RED} Anyways it was nice meeting you")
+    time.sleep(1)
+    exit()            
+if screen_1 == "color":
+    lol = input(f"{Fore.BLUE}What color would you like?:")
+    uwu = input(f"{Fore.BLUE}What would you like to say:")
+    if lol == "red":
+        print(f"{Fore.RED} "+uwu)
+    if lol == "blue":
+        print(f"{Fore.BLUE} "+uwu)
+    if lol =="yellow":
+        print(f"{Fore.YELLOW} "+uwu)
+    #16
+    if lol == "green":
+        print(f"{Fore.GREEN} "+uwu)
+if screen_1 == "youtube":
+    print(f"{Fore.BLUE}                    ___________________________________________________________")
+    print(f"{Fore.BLUE}                    |                                                         |") 
+    print(f"{Fore.BLUE}                    |{Fore.RED} My youtube channel!   {Fore.BLUE}                                  |")
+    print(f"{Fore.BLUE}                    |{Fore.RED}https://www.youtube.com/channel/UCMaIHy41sTwhst4pWbQMBxw{Fore.BLUE} |")
+    print(f"{Fore.BLUE}                    |                                                         |")
+    print(f"{Fore.BLUE}                    -----------------------------------------------------------")
+if screen_1 == "random":
+    print("Here is a random number between 0 and 100")
+    print(randint(0,100))
+        
+else:
+    print(f"{Fore.RED}ERROR:INVALID SYNTAX")
